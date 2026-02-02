@@ -5,8 +5,8 @@ const donutEls = document.querySelectorAll(".donut");
 const MAX_IN_BOX = 2;
 const MAX_BOXES = 4;
 
-const BOX_OPEN_SRC = "/img/box.svg";
-const BOX_LID_SRC = "/img/glass.svg";
+const BOX_OPEN_SRC = "./img/box.svg";
+const BOX_LID_SRC = "./img/glass.svg";
 
 const titleEl = document.querySelector(".title");
 const quizEl = document.getElementById("quiz");
