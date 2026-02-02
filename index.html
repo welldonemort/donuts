@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DONUTS</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game">
+        <h1 class="title">
+          Click on the donuts to pack a
+          <span class="text-blue">group of 2</span>
+        </h1>
+
+        <div id="boxes" class="boxes">
+          <div class="box">
+            <img class="box__img" src="/img/box.svg" alt="box" />
+            <div class="box__content"></div>
+            <img class="box__lid" src="/img/glass.svg" alt="glass" />
+          </div>
+
+          <div class="count-overlay" id="countOverlay"></div>
+        </div>
+
+        <div class="donuts">
+          <img src="/img/donut.svg" alt="donut" class="donut donut-1" />
+          <img src="/img/donut.svg" alt="donut" class="donut donut-2" />
+          <img src="/img/donut.svg" alt="donut" class="donut donut-3" />
+          <img src="/img/donut.svg" alt="donut" class="donut donut-4" />
+          <img src="/img/donut.svg" alt="donut" class="donut donut-5" />
+          <img src="/img/donut.svg" alt="donut" class="donut donut-6" />
+          <img src="/img/donut.svg" alt="donut" class="donut donut-7" />
+          <img src="/img/donut.svg" alt="donut" class="donut donut-8" />
+        </div>
+
+        <div class="quiz is-hidden" id="quiz">
+          <div class="quiz__row">
+            <span class="quiz__label">How many donuts in total?</span>
+            <input
+              id="quizInput"
+              class="quiz__input"
+              type="text"
+              inputmode="numeric"
+              autocomplete="off"
+              placeholder="" />
+          </div>
+
+          <button id="quizBtn" class="quiz__btn" disabled>Done</button>
+        </div>
+      </div>
+
+      <img src="/img/bg.svg" alt="background" class="background" />
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
